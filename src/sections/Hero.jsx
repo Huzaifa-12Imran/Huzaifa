@@ -84,7 +84,7 @@ const Hero = () => {
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-4 w-full">
 
                     {/* ── LEFT: Text ── */}
-                    <div className="flex flex-col items-start lg:w-[62%] w-full">
+                    <div className="flex flex-col items-start lg:max-w-[70%] w-full">
 
                         {/* Eyebrow */}
                         <div className="hero-eyebrow flex items-center gap-4 mb-10 opacity-0">
@@ -150,7 +150,7 @@ const Hero = () => {
 
                     {/* ── RIGHT: 3D Object ── */}
                     <div
-                        className="hero-3d-col lg:w-[35%] w-full flex items-center justify-center lg:translate-y-[-5%] order-first lg:order-none"
+                        className="hero-3d-col lg:w-[35%] w-full hidden lg:flex items-center justify-center lg:translate-y-[-5%] order-first lg:order-none"
                         style={{
                             height: 'clamp(280px, 35vw, 500px)',
                             opacity: 0,
