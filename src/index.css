@@ -39,14 +39,19 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  min-height: 100svh;
   overflow-x: hidden;
   background-color: var(--color-cream);
   color: var(--color-grey-deep);
-  cursor: none !important;
 }
 
-* {
-  cursor: none !important;
+/* Only hide cursor on devices with a mouse */
+@media (pointer: fine) {
+
+  body,
+  * {
+    cursor: none !important;
+  }
 }
 
 h1,

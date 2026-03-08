@@ -44,8 +44,16 @@ const CustomCursor = () => {
             }
         };
 
+        const handleTouchMove = (e) => {
+            if (e.touches && e.touches[0]) {
+                mouse.current.x = e.touches[0].clientX;
+                mouse.current.y = e.touches[0].clientY;
+            }
+        };
+
         window.addEventListener('resize', handleResize);
         window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('touchmove', handleTouchMove, { passive: true });
         handleResize();
 
         const render = () => {
@@ -138,6 +146,7 @@ const CustomCursor = () => {
         return () => {
             window.removeEventListener('resize', handleResize);
             window.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener('touchmove', handleTouchMove);
             if (rafId.current) cancelAnimationFrame(rafId.current);
         };
     }, [isHovered]);
@@ -145,7 +154,7 @@ const CustomCursor = () => {
     return (
         <>
             <div
-                className="fixed inset-0 pointer-events-none z-[999999]"
+                className="fixed inset-0 pointer-events-none z-[999999] hidden md:block"
                 style={{
                     filter: 'url(#buttermax-goo)',
                     mixBlendMode: 'difference',

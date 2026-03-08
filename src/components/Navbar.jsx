@@ -81,20 +81,20 @@ const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-cream border-b border-grey-soft overflow-hidden"
+                        className="md:hidden bg-cream border-b border-grey-soft overflow-hidden shadow-2xl"
                     >
-                        <div className="flex flex-col p-6 space-y-4">
+                        <div className="flex flex-col p-8 space-y-6">
                             {navLinks.map((link) => (
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    className="text-lg font-bold uppercase tracking-widest text-grey-deep"
+                                    className="text-2xl font-black uppercase tracking-tighter text-grey-deep hover:text-gold transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.name}
                                 </a>
                             ))}
-                            <a href="#contact" className="w-full py-4 bg-gold text-white font-bold rounded-xl mt-4 text-center" onClick={() => setIsMobileMenuOpen(false)}>
+                            <a href="#contact" className="w-full py-5 bg-gold text-white font-bold rounded-2xl mt-4 text-center text-lg shadow-lg active:scale-[0.98] transition-transform" onClick={() => setIsMobileMenuOpen(false)}>
                                 HIRE ME
                             </a>
                         </div>

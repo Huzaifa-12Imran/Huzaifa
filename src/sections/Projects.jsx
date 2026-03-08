@@ -253,7 +253,7 @@ const ProjectSlide = ({ project, index }) => {
             <span
                 className="absolute right-0 bottom-0 font-syne font-black leading-none select-none pointer-events-none"
                 style={{
-                    fontSize: 'clamp(180px, 28vw, 380px)',
+                    fontSize: 'clamp(120px, 25vw, 380px)',
                     opacity: 0.07,
                     color: project.accent,
                     transform: 'translate(5%, 10%)',
@@ -291,7 +291,7 @@ const ProjectSlide = ({ project, index }) => {
                     <h3
                         ref={titleRef}
                         className="font-syne font-black uppercase tracking-tighter leading-none text-grey-deep"
-                        style={{ fontSize: 'clamp(52px, 8vw, 130px)' }}
+                        style={{ fontSize: 'clamp(42px, 10vw, 130px)' }}
                     >
                         {titleWords.map((word, i) => (
                             <span key={i} className="title-word block overflow-hidden">
@@ -320,7 +320,7 @@ const ProjectSlide = ({ project, index }) => {
                     className="lg:max-w-xs space-y-8 lg:border-l lg:border-grey-soft lg:pl-12"
                 >
                     {/* Year */}
-                    <div>
+                    <div className="hidden sm:block">
                         <p className="text-[9px] uppercase tracking-[0.3em] font-inter text-grey-mid mb-1">Year</p>
                         <p className="font-syne font-black text-3xl text-grey-deep">{project.year}</p>
                     </div>

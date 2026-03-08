@@ -74,7 +74,7 @@ const SkillRow = ({ skill, index }) => {
             </span>
 
             {/* Skill Name */}
-            <h3 className="relative flex-1 font-syne font-black text-3xl md:text-5xl lg:text-6xl tracking-tighter text-grey-deep group-hover:text-gold transition-colors duration-400 leading-none">
+            <h3 className="relative flex-1 font-syne font-black text-2xl md:text-5xl lg:text-6xl tracking-tighter text-grey-deep group-hover:text-gold transition-colors duration-400 leading-none">
                 {skill.name}
             </h3>
 
@@ -139,7 +139,7 @@ const Skills = () => {
                         <p className="text-sm uppercase tracking-[0.4em] text-gold font-bold font-inter mb-6">
                             02 — Expertise
                         </p>
-                        <h2 className="text-4xl md:text-6xl font-syne font-black tracking-tighter text-grey-deep leading-none">
+                        <h2 className="text-3xl md:text-6xl font-syne font-black tracking-tighter text-grey-deep leading-none">
                             A VERSATILE<br />
                             TECH STACK.
                         </h2>

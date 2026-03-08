@@ -63,7 +63,7 @@ const Contact = () => {
                         <h2 className="text-sm uppercase tracking-[0.4em] text-gold font-bold mb-8">
                             04 — Connect
                         </h2>
-                        <h3 className="text-5xl md:text-8xl font-syne font-black tracking-tighter mb-12 uppercase leading-[0.8] text-grey-deep">
+                        <h3 className="text-4xl md:text-8xl font-syne font-black tracking-tighter mb-12 uppercase leading-[0.9] md:leading-[0.8] text-grey-deep">
                             Let's build <br /> something <br /> <span className="text-gold">Premium.</span>
                         </h3>
 

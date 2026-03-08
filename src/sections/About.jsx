@@ -54,11 +54,11 @@ const About = () => {
                         </h2>
 
                         <div ref={textRef} className="space-y-8">
-                            <p className="text-3xl md:text-5xl lg:text-6xl font-syne font-medium leading-[1.1] about-line text-grey-deep">
+                            <p className="text-2xl md:text-5xl lg:text-6xl font-syne font-medium leading-[1.2] lg:leading-[1.1] about-line text-grey-deep">
                                 I am Huzaifa, a <span className="text-grey-mid">creative developer</span> blending the art of web design with immersive mechanics.
                             </p>
 
-                            <p className="text-lg md:text-xl text-grey-mid max-w-2xl about-line">
+                            <p className="text-base md:text-xl text-grey-mid max-w-2xl about-line leading-relaxed">
                                 Specializing in the MERN stack and Unreal Engine 5, I build digital bridges between functionality and imagination. My goal is to craft experiences that aren't just seen, but felt.
                             </p>
 

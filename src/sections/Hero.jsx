@@ -68,7 +68,7 @@ const Hero = () => {
     return (
         <section
             ref={containerRef}
-            className="relative h-screen flex items-center overflow-hidden bg-cream"
+            className="relative h-screen min-h-[100svh] flex items-center overflow-hidden bg-cream"
         >
             {/* Subtle grain overlay for depth */}
             <div
@@ -96,8 +96,8 @@ const Hero = () => {
 
                         {/* Headline */}
                         <h1
-                            className="hero-title font-black font-syne leading-[0.8] tracking-tighter mb-8 select-none"
-                            style={{ fontSize: 'clamp(4.2rem, 8.5vw, 8.8rem)' }}
+                            className="hero-title font-black font-syne leading-[0.9] lg:leading-[0.8] tracking-tighter mb-8 select-none"
+                            style={{ fontSize: 'clamp(3.8rem, 12vw, 8.8rem)' }}
                         >
                             <span className="block mb-2 text-grey-deep">BUILDING</span>
                             <span
@@ -126,33 +126,33 @@ const Hero = () => {
                         </p>
 
                         {/* Stats row */}
-                        <div className="flex items-center gap-10">
+                        <div className="flex flex-wrap items-center gap-6 lg:gap-10">
                             <div className="hero-stats opacity-0">
                                 <p className="text-grey-mid uppercase tracking-widest text-[9px] mb-1">Based in</p>
-                                <p className="font-syne font-bold text-base text-grey-deep">Reality, Core</p>
+                                <p className="font-syne font-bold text-sm lg:text-base text-grey-deep whitespace-nowrap">Reality, Core</p>
                             </div>
                             <div
-                                className="hero-stats opacity-0 w-px h-8 bg-grey-soft"
+                                className="hero-stats opacity-0 w-px h-8 bg-grey-soft hidden lg:block"
                             />
                             <div className="hero-stats opacity-0">
                                 <p className="text-grey-mid uppercase tracking-widest text-[9px] mb-1">Core Stack</p>
-                                <p className="font-syne font-bold text-base text-grey-deep">React · WebGL · UE5</p>
+                                <p className="font-syne font-bold text-sm lg:text-base text-grey-deep whitespace-nowrap">React · WebGL · UE5</p>
                             </div>
                             <div
-                                className="hero-stats opacity-0 w-px h-8 bg-grey-soft"
+                                className="hero-stats opacity-0 w-px h-8 bg-grey-soft hidden lg:block"
                             />
                             <div className="hero-stats opacity-0">
                                 <p className="text-grey-mid uppercase tracking-widest text-[9px] mb-1">Status</p>
-                                <p className="font-syne font-bold text-base text-gold">Open to work</p>
+                                <p className="font-syne font-bold text-sm lg:text-base text-gold whitespace-nowrap">Open to work</p>
                             </div>
                         </div>
                     </div>
 
                     {/* ── RIGHT: 3D Object ── */}
                     <div
-                        className="hero-3d-col lg:w-[35%] w-full flex items-center justify-center translate-y-[-5%]"
+                        className="hero-3d-col lg:w-[35%] w-full flex items-center justify-center lg:translate-y-[-5%] order-first lg:order-none"
                         style={{
-                            height: 'clamp(320px, 40vw, 500px)',
+                            height: 'clamp(280px, 35vw, 500px)',
                             opacity: 0,
                             position: 'relative',
                         }}

@@ -59,7 +59,7 @@ const Journey = () => {
                         start: "top 80%",
                         toggleActions: "play none none reverse",
                     },
-                    x: i % 2 === 0 ? -100 : 100,
+                    x: window.innerWidth < 768 ? (i % 2 === 0 ? -30 : 30) : (i % 2 === 0 ? -100 : 100),
                     opacity: 0,
                     duration: 1,
                     ease: "power4.out",
