@@ -152,7 +152,7 @@ const Hero = () => {
                     <div
                         className="hero-3d-col lg:w-[35%] w-full hidden lg:flex items-center justify-center lg:translate-y-[-5%] order-first lg:order-none"
                         style={{
-                            height: 'clamp(280px, 35vw, 500px)',
+                            height: 'clamp(320px, 45vw, 650px)',
                             opacity: 0,
                             position: 'relative',
                         }}

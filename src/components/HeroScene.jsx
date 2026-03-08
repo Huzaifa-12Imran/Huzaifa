@@ -59,7 +59,7 @@ const HeroScene = () => {
     return (
         <div className="w-full h-full" style={{ pointerEvents: 'none' }}>
             <Canvas
-                camera={{ position: [0, 0, 4], fov: 42 }}
+                camera={{ position: [0, 0, 4.5], fov: 45 }}
                 dpr={[1, 2]}
                 gl={{ antialias: true, alpha: true }}
                 style={{ background: 'transparent' }}
