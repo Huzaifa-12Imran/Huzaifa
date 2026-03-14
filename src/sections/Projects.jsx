@@ -24,7 +24,7 @@ const projects = [
         year: "2024",
         description: "A complex enterprise-level dashboard with real-time data visualization and secure role-based access control.",
         tags: ["MongoDB", "Express", "React", "Node"],
-        links: { github: "https://github.com/Huzaifa-12Imran/AcademiX-By-3070-3040-3025.git", demo: null },
+        links: { github: "https://github.com/Huzaifa-12Imran/AcademiX-By-3070-3040-3025.git", demo: "https://academi-x-by-3070-3040-3025.vercel.app" },
         accent: "#2C2C2C"
     },
     {
